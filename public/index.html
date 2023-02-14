@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./icons/icons8-task-completed-50.png" type="image/x-icon" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Task Mongo Manager</title>
+</head>
+<body>
+
+<h1 class="header-text">TASK MANAGER</h1>
+
+<div class="form-wrapper">
+<form class="task-form">
+    <div class="form-control">
+        <label>
+            <input
+                    type="text"
+                    name="name"
+                    class="task-input"
+                    maxlength="256"
+                    placeholder="Enter name of task..."
+            />
+        </label>
+        <br />
+        <button type="submit" class="submit-btn">submit</button>
+    </div>
+    <div class="form-alert"></div>
+</form>
+</div>
+
+<hr/>
+
+<!-- Tasks list -->
+<section class="tasks-list">
+    <p class="loading-text main-color">Loading...</p>
+    <div class="tasks"></div>
+</section>
+<!-- axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="task-manager.js"></script>
+</body>
+</html>
